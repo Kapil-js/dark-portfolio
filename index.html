@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyPortfolio</title>
+    <link rel="shortcut icon" href="./images/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media-query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body id="home">
+    <!-- --------------Header Start--------------- -->
+    <header>
+        <div class="container">
+            <nav>
+                <h1><span>K</span>APIL.</h1>
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#aboutMe">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-txt">
+                <p>Front-end Developer</p>
+                <h1>Hi, I'm <span>Kapil Kumawat</span><br> from India.</h1>
+            </div>
+        </div>
+    </header>
+    <!-- --------------Header End--------------- -->
+
+    <!-- --------------About Start--------------- -->
+    <div class="about" id="aboutMe">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/Photo.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1>About me</h1>
+                    <p class="abt-me">I'm Kapil kumawat. I belongs to Jaipur, Rajasthan. I'm
+                        19 Years Old. I love doing coding. I'm an experienced
+                        Web Delevoper who constantly seeks out innovative solutions to everyday problems.</p>
+                    <div class="col-2-tab">
+                        <p class="tab-title active-title" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-title" onclick="opentab('education')">Education</p>
+                        <p class="tab-title" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>
+                                <span>HTML5</span><br>
+                                <span>CSS3</span><br>
+                                <span>SCSS</span><br>
+                                <span>JavaScript</span><br>
+                                <span>Bootstrap</span><br>
+                                <span>Figma</span><br>
+                                <span>Adobe XD</span><br>
+                                <span>PhotoShop</span>
+                            </li>
+                            <!-- <li><span>Editor</span><br>Video Editor/Photo Editor.</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Running</span><br>BCA (Bachelors in Computer Application)</li>
+                            <li><span>2021</span><br>12th Rajani Public School</li>
+                            <li><span>2019</span><br>10th Saraswati Sen Sec School</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Dqot Solutions</span><br>Working Front-end Developer</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------About End--------------- -->
+
+    
+          
+
+    <!-- --------------Portfolio Start--------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/Calculator.png" alt="">
+                    <div class="work-detail">
+                        <h3>Calculator</h3>
+                        <p>This is a simple Calculator. You can perform only Arithmetic Operation.</p>
+                        <a href="x" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/FaceBookLoginPage.png" alt="">
+                    <div class="work-detail">
+                        <h3>Facebook Login Page</h3>
+                        <p>This is a login page of Facebook.</p>
+                        <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Notes2.jpg" alt="">
+                    <div class="work-detail">
+                        <h3>Notes App</h3>
+                        <p>You can create notes on this App.</p>
+                        <a href="x" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/ATMCard.jpg" alt="">
+                    <div class="work-detail">
+                        <h3>ATM Virtual Interface</h3>
+                        <p>This is an 3D ATM Virtual Interface.</p>
+                        <a href="x" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square" title="click to view the site"></i></a>
+                    </div>
+                </div>
+                <div class="work" id="hidden-work1">
+                    <img src="./images/Cricc.jpg" alt="">
+                    <div class="work-detail">
+                        <h3>CRICC</h3>
+                        <p>This project is not ready.<br> Work in progress</p>
+                        <a href="#x/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square" title="click to view the site"></i></a>
+                    </div>
+                </div>
+                <div class="work" id="hidden-work2">
+                    <img src="./images/Food.jpg" alt="">
+                    <div class="work-detail">
+                        <h3>Online Food Order</h3>
+                        <p>In this site you are able to online food form home and enjoy the meal happyily</p>
+                        <a href="x" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square" title="click to view the site"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <p class="btn" onclick="showmore()" id="btn">Show more</p>
+
+        </div>
+    </div>
+
+
+    <!-- --------------Portfolio End--------------- -->
+
+    <!-- --------------Contact Start--------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <a href="mailto:kapilkumawat2233@gmail.com" class="flex">
+                        <span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <p>kapilkumawat2233@gmail.com</p>
+                    </a>
+                    <a href="tel:9672520566" class="flex">
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <p>9672520566</p>
+                    </a>
+                    <div class="social-link">
+                        <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kapil-kumawat-a10417236/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Kapil__kumawat" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="#" download=""    class="btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet" action="https://formspree.io/f/mnqryggv"
+                    method="POST">
+                        <input type="text" name="Name" autocomplete="off" placeholder="Your Name" required>
+                        <input type="email" name="Email" autocomplete="off" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" autocomplete="off" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn3">Submit</button>
+                    </form>
+                    <p id="msg"></p>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2022 Kapil kumawat.</p>
+        </div>
+    </div>
+
+    <!-- --------------Contact End--------------- -->
+    <script src="js/script.js"></script>
+    <!-- <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwuBI-ew1uvMPhAENEWS2x023l96YrB4PsjDhakt5SkBvzpZuhB8ummH4TFvDqB8vfB/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully !!"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                }, 5000);
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script> -->
+</body>
+
+</html>
